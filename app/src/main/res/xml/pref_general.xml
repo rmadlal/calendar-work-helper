@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/pref_header_general">
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_event_title"
+            android:inputType="text"
+            android:key="@string/event_title_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_general_event_title" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:inputType="text"
+            android:key="@string/event_description_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_general_event_description" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:inputType="text"
+            android:key="@string/event_location_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_general_event_location" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Work times (hh:mm)">
+
+        <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+        <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_day_start"
+            android:inputType="time"
+            android:key="@string/day_start_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_day_start" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_day_end"
+            android:inputType="time"
+            android:key="@string/day_end_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_day_end" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_night_start"
+            android:inputType="time"
+            android:key="@string/night_start_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_night_start" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_night_end"
+            android:inputType="time"
+            android:key="@string/night_end_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_night_end" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_sat_start"
+            android:inputType="time"
+            android:key="@string/sat_start_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_sat_start" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_sat_end"
+            android:inputType="time"
+            android:key="@string/sat_end_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_sat_end" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
